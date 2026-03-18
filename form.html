@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+        header{
+            background-color: red;
+            color: aqua;
+            padding: 1em;
+            text-align: center;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        main {
+            padding: 2em;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0 , 0 10px , rgb(0, 0, 0,1);
+
+        }
+        input , textarea , select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        /* button[type = "submit"] {
+            background-color: green;
+            color: black;
+            padding: 10px 20px;
+            border: 0px , solid red;
+            cursor: pointer;
+        }
+          button[type = "reset"] {
+            background-color: green;
+            color: black;
+            padding: 10px 20px;
+            border: 0px , solid red;
+            cursor: pointer;
+        } */
+        .button-color {
+            background-color: rgb(27, 97, 217);
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <form action="#php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone no">Your Contract No :</label>
+            <input type="tel" id="phone no" name="phone no" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+            <br>
+
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="usa">United States</option>
+                <option value="india">India</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="state">State</label>
+            <select name="state" id="state" required>
+                <option value="" disabled selected>Select your state</option>
+                <option value="andhra-pradesh">Andhra Pradesh</option>
+                <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="bihar">Bihar</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="goa">Goa</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="haryana">Haryana</option>
+                <option value="himachal-pradesh">Himachal Pradesh</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+                <option value="madhya-pradesh">Madhya Pradesh</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="manipur">Manipur</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="odisha">Odisha</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="tamil-nadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="tripura">Tripura</option>
+                <option value="uttar-pradesh">Uttar Pradesh</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="west-bengal">West Bengal</option>
+                <option value="other">Other / NCT</option>
+            </select>
+            <br><br>
+
+            <input type="button" value="Register" class="button-color">
+            <input type="button" value="Reset" onclick="this.form.reset()">
+        </form>
+    </main>
+
+
+    
+</body>
+</html>
